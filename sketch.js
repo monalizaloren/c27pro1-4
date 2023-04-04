@@ -10,30 +10,36 @@ var canvas, angle, tower, ground, cannon;
 
 function preload() {
   backgroundImg = loadImage("./assets/background.gif");
-  towerImage = loadImage("./assets/tower.png");
+  /*No código acima, você está carregando a imagem do plano de fundo
+  faça o mesmo a torra*/
+  ???
 
 }
 
 function setup() {
-  canvas = createCanvas(1200,600);
+  //Utilize o código que falta para criar um canvas
+  canvas = ???(1200,600);
   engine = Engine.create();
   world = engine.world;
 
-  tower = new Tower(150, 350, 160, 310);
+  //Utilize ' new Tower' para criar um objeto da classe torre
+  tower =??? (150, 350, 160, 310);
   
 
 }
 
 function draw() {
   background(189);
-  image(backgroundImg, 0, 0, width, height);
+  /*Escreva o nome da variável que carrega a imagem de fundo*/
+  image(???, 0, 0, width, height);
 
   
 
   Engine.update(engine);
-  
-
- tower.display();
+  /* Na classe tower.js, você tem uma única função
+  Ela tem o objetivo de mostrar a torre na tela. 
+  Coloque o nome dela abaixo:*/
+ tower.???();
   
  
 }
