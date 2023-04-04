@@ -1,12 +1,17 @@
 class Tower {
   constructor(x, y, width, height) {
     var options = {
-      isStatic: true
+      //Defina que a torre será estática, como verdadeiro
+      isStatic: ???
     };
-    this.image = loadImage("assets/tower.png");
+    /*Carregue a imagem da torre*/
+    this.image = ???
     this.width = width;
     this.height = height;
-    this.body = Bodies.rectangle(x, y, this.width, this.height, options);
+    //O corpo da torre é um retângulo
+    //Utilize ' Bodies.rectangle' para criar um corpo retângular
+    this.body = ???(x, y, this.width, this.height, options);
+    //Utilize 'World.add' para adicionar o corpo ao mundo
     World.add(world, this.body);
   }
   display() {
